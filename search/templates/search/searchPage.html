@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'search/searchPage.css' %}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4/dist/css/bootstrap.min.css"> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4/dist/js/bootstrap.bundle.min.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+  <center>
+    <h1>Welcome to Yahoo Finance API Stock Data Fetcher</h1>
+    <h3>Search page</h3>
+</center>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <h4>Select Company Ticker Symbol:</h4>
+      <form class="form" action="" method="POST" style="width:100%;">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" class="btn btn-success" value="Submit"/>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

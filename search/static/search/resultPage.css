@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+.jumbotron{
+    margin-bottom:0px!important;
+}
+
+.ticker-title {
+    background-color: #00ADB4;
+    min-height:70px!important;
+    justify-items: center;
+    grid-area: head;
+}
+
+
+.box{
+    width: 24.4%!important;
+    box-shadow: 5px 5px 5px gray;
+    margin: 5px;
+    min-height: 300px!important;
+    background-color: #E2FEFF;
+}
+
+.box-heading{
+    background-color: #00ADB4;
+    color:black;
+    text-align: center;
+}
+
+.box-heading h5{
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.box-details{
+    background-color: #E2FEFF;
+}
+
+.box-details h2{
+    font-size: 20px;
+    color: darkslategrey;
+}
+
+#title {
+    font-size: 36px;
+    line-height: 70px;
+    text-align: center;
+    font-family: 'Georgia';
+}
+
+#link_back {
+    font-size: 15px;
+    color: #000;
+    text-align: center;
+    font-family: 'Georgia';
+}
